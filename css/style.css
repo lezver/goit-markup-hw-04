@@ -277,6 +277,15 @@ img {
   border-radius: 5px;
   border: 1px solid var(--light-slate);
 }
+.customers-item:hover {
+  border: 1px solid var(--ocean);
+}
+.customers-item > svg {
+  fill: var(--light-slate);
+}
+.customers-item:hover > svg {
+  fill: var(--ocean);
+}
 /* ==================== Portfolio ==================== */
 .portfolio {
   padding: 96px 0 120px;
