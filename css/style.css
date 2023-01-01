@@ -7,6 +7,7 @@
   --light-slate: #8e8f99;
   --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
+  --grey: #2e2f42b2;
 }
 
 body {
@@ -100,16 +101,32 @@ img {
   display: flex;
   gap: 40px;
 }
+.contacts-item {
+  display: flex;
+}
+.tel {
+  fill: var(--slate);
+}
 .contacts-link {
   color: var(--slate);
+  display: flex;
+  align-items: center;
+}
+.contacts-link > svg {
+  margin-right: 5px;
 }
 .contacts-link:focus,
 .contacts-link:hover {
   color: var(--iris);
 }
+.contacts-link:focus > svg,
+.contacts-link:hover > svg {
+  fill: var(--iris);
+}
 /* ==================== Hero ==================== */
 .hero {
-  background: var(--navy-blue);
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/bg-hero.jpg') no-repeat center/cover;
   text-align: center;
   padding: 188px 0;
 }
@@ -191,6 +208,7 @@ img {
 }
 .our-team-item {
   text-align: center;
+  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229;
 }
 .our-team-box {
   padding: 32px 16px;
@@ -236,6 +254,7 @@ img {
 }
 .portfolio-item {
   max-width: 360px;
+  box-shadow: 0px 1px 6px 0px #2e2f4214;
 }
 .portfolio-box {
   padding: 32px 16px;
