@@ -160,13 +160,22 @@ img {
 }
 .why-we-item {
   max-width: 264px;
-  /* flex-basis: calc((100%-24px) / 4); */
 }
 .why-we-item > h3 {
   color: var(--navy-blue);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
+}
+.why-we-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--cloud);
+  height: 112px;
+  width: 100%;
+  border-radius: 4px;
   margin-bottom: 8px;
 }
 /* ==================== What are we doing ==================== */
