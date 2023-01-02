@@ -253,16 +253,17 @@ svg {
   justify-content: space-between;
 }
 .our-team-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
+  background: var(--iris);
+  border-radius: 50%;
 }
-.our-team-link > svg {
-  fill: var(--iris);
-}
-.our-team-link:hover > svg,
-.our-team-link:focus > svg {
-  fill: var(--ocean);
+.our-team-link:hover,
+.our-team-link:focus {
+  background: var(--ocean);
 }
 /* ==================== Customers ==================== */
 .customers {
@@ -390,12 +391,15 @@ svg {
   gap: 16px;
 }
 .footer-link {
-  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
-.footer-link > svg {
-  fill: rgba(255, 255, 255, 0.1);
-}
-.footer-link:hover > svg,
-.footer-link:focus > svg {
-  fill: var(--green);
+.footer-link:hover,
+.footer-link:focus {
+  background: var(--green);
 }
