@@ -279,7 +279,7 @@ svg {
   flex-wrap: wrap;
   gap: 24px;
 }
-.customers-item {
+.customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,13 +288,15 @@ svg {
   border-radius: 5px;
   border: 1px solid var(--light-slate);
 }
-.customers-item:hover {
+.customers-link:hover,
+.customers-link:focus {
   border: 1px solid var(--ocean);
 }
-.customers-item > svg {
+.customers-link > svg {
   fill: var(--light-slate);
 }
-.customers-item:hover > svg {
+.customers-link:hover > svg,
+.customers-link:focus > svg {
   fill: var(--ocean);
 }
 /* ==================== Portfolio ==================== */
@@ -390,6 +392,7 @@ svg {
 .footer-link > svg {
   fill: rgba(255, 255, 255, 0.1);
 }
-.footer-link:hover > svg {
+.footer-link:hover > svg,
+.footer-link:focus > svg {
   fill: var(--green);
 }
